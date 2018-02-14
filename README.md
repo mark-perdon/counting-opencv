@@ -1,11 +1,10 @@
-Vehicle Detection, Tracking and Counting
+Detection, Tracking and Counting
 ========================================
 
 Last page update: **30/04/2015**
 
 Last version: **1.0.0** (see Release Notes for more info)
 
-Hi everyone,
 
 There are several ways to perform vehicle detection, tracking and counting.
 Here is a step-by-step of a simplest way to do this: 
@@ -19,7 +18,6 @@ Additional informations:
 * There is a Visual Studio 2013 template project in the **vs2013/** folder. Open it in the Visual Studio IDE and select [Release]-[Win32] mode.
 * The include files for the OpenCV 2.4.10 are provided in the **include/** folder, and the related static libraries are provided in the **lib/x86/vc12** folder.
 
-<p align="center"><img src="https://sites.google.com/site/andrewssobral/vehicle_counting_screen.png" /></p>
 
 Example code
 ------------
