@@ -1,0 +1,64 @@
+﻿Build started 12/19/2016 6:58:02 PM.
+     1>Project "D:\segovia project\simple_people_detector\vs2013\project.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (project.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\include /IC:\opencv\build\include\opencv /IC:\opencv\build\include\opencv2 /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ../Demo.cpp ..\package_analysis\PeopleCounting.cpp ..\package_bgs\PBAS\PBAS.cpp ..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp ..\package_tracking\BlobTracking.cpp ..\package_tracking\cvblob\cvaux.cpp ..\package_tracking\cvblob\cvblob.cpp ..\package_tracking\cvblob\cvcolor.cpp ..\package_tracking\cvblob\cvcontour.cpp ..\package_tracking\cvblob\cvlabel.cpp ..\package_tracking\cvblob\cvtrack.cpp
+         cvtrack.cpp
+     1>..\package_tracking\cvblob\cvtrack.cpp(162): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\package_tracking\cvblob\cvtrack.cpp(163): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>..\package_tracking\cvblob\cvtrack.cpp(335): warning C4297: 'cvb::cvUpdateTracks' : function assumed not to throw an exception but does
+                 __declspec(nothrow) or throw() was specified on the function
+         cvlabel.cpp
+     1>..\package_tracking\cvblob\cvlabel.cpp(98): warning C4800: 'cvb::CvLabel' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_tracking\cvblob\cvlabel.cpp(148): warning C4018: '<' : signed/unsigned mismatch
+     1>..\package_tracking\cvblob\cvlabel.cpp(437): warning C4018: '<' : signed/unsigned mismatch
+         cvcontour.cpp
+     1>..\package_tracking\cvblob\cvcontour.cpp(242): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\package_tracking\cvblob\cvcontour.cpp(356): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\package_tracking\cvblob\cvcontour.cpp(364): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+         cvcolor.cpp
+         cvblob.cpp
+         cvaux.cpp
+         BlobTracking.cpp
+     1>..\package_tracking\BlobTracking.cpp(65): error C2664: 'cv::Mat::Mat(const cv::cuda::GpuMat &)' : cannot convert argument 1 from 'IplImage *' to 'const cv::Mat &'
+                 Reason: cannot convert from 'IplImage *' to 'const cv::Mat'
+                 No constructor could take the source type, or constructor overload resolution was ambiguous
+     1>..\package_tracking\BlobTracking.cpp(101): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_tracking\BlobTracking.cpp(102): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_tracking\BlobTracking.cpp(103): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_tracking\BlobTracking.cpp(104): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         PixelBasedAdaptiveSegmenter.cpp
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(6): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(89): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(90): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(92): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(93): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(96): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(99): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\package_bgs\PBAS\PixelBasedAdaptiveSegmenter.cpp(105): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         PBAS.cpp
+         PeopleCounting.cpp
+     1>..\package_analysis\PeopleCounting.cpp(247): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>..\package_analysis\PeopleCounting.cpp(318): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_analysis\PeopleCounting.cpp(321): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\package_analysis\PeopleCounting.cpp(322): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         Demo.cpp
+     1>../Demo.cpp(43): error C2664: 'cv::Mat::Mat(const cv::cuda::GpuMat &)' : cannot convert argument 1 from 'IplImage *' to 'const cv::Mat &'
+                 Reason: cannot convert from 'IplImage *' to 'const cv::Mat'
+                 No constructor could take the source type, or constructor overload resolution was ambiguous
+         Generating Code...
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcolor.cpp(102): warning C4715: 'cvBlobMeanColor' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcontour.cpp(124): warning C4715: 'cvConvertChainCodesToPolygon' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcontour.cpp(178): warning C4715: 'cvContourPolygonArea' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcontour.cpp(217): warning C4715: 'cvContourPolygonPerimeter' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcontour.cpp(200): warning C4715: 'cvContourChainCodePerimeter' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcontour.cpp(235): warning C4715: 'cvContourPolygonCircularity' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcontour.cpp(324): warning C4715: 'cvSimplifyPolygon' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvcontour.cpp(378): warning C4715: 'cvPolygonContourConvexHull' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvlabel.cpp(442): warning C4715: 'cvGetLabel' : not all control paths return a value
+     1>d:\segovia project\simple_people_detector\package_tracking\cvblob\cvlabel.cpp(361): warning C4715: 'cvLabel' : not all control paths return a value
+     1>Done Building Project "D:\segovia project\simple_people_detector\vs2013\project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.25
