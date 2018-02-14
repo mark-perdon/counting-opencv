@@ -12,7 +12,6 @@ Here is a step-by-step of a simplest way to do this:
 1. First, you will need to detect the moving objects. An easy way to do vehicle detection is by using a Background Subtraction (BS) algorithm. You can try to use a background subtraction library like [BGSLibrary](https://github.com/andrewssobral/bgslibrary#bgslibrary).
 2. For vehicle tracking, you will need to use a tracking algorithm. A simplest way to do this is by using a blob tracker algorithm (see [cvBlob](https://code.google.com/p/cvblob/) or [OpenCVBlobsLib](http://opencvblobslib.github.io/opencvblobslib/)). So, send the foreground mask to **cvBlob** or **OpenCVBlobsLib**. For example, the **cvBlob** library provide some methods to get the **centroid**, the **track** and the **ID** of the moving objects. You can also set to draw a **bounding box**, the **centroid** and the **angle** of the tracked object.
 3. And then, check if the **centroid** of the moving object has crossed a **region of interest** (i.e. virtual line) in your video.
-4. Voilà! enjoy it :)
 
 Additional informations:
 * There is a Visual Studio 2013 template project in the **vs2013/** folder. Open it in the Visual Studio IDE and select [Release]-[Win32] mode.
